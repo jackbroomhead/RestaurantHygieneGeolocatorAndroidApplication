@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackbackground"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/findByRecent"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="392dp"
+        android:background="@color/lightblue"
+        android:text="Find Recent"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/FindByNearest"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="316dp"
+        android:background="@color/lightblue"
+        android:text="Find Nearest"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/findByName2"
+        android:layout_width="131dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/findByPostCode"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="19dp"
+        android:background="@color/lightblue"
+        android:text="Search"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_below="@+id/editTextPostCode"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/findByName2"
+        android:background="@color/limegreen"
+        android:ems="10"
+        android:hint="Search Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/findByPostCode"
+        android:layout_width="131dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="19dp"
+        android:background="@color/lightblue"
+        android:text="Search"
+        android:textColor="@android:color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mainlogo"
+        android:layout_width="400dp"
+        android:layout_height="100dp" />
+
+    <EditText
+        android:id="@+id/editTextPostCode"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toStartOf="@+id/findByPostCode"
+        android:background="@color/limegreen"
+        android:ems="10"
+        android:hint="Search Postcode"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

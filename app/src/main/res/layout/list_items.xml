@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dip"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/BusinessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/AddressLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BusinessName"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@android:color/white"
+
+
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/AddressLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddressLine1"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddressLine2"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/ratingvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Postcode"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
